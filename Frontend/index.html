@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Powder Fire Extinguisher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>VariEX</h1>
+            <p>Fire Immuniser</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#policy">Policy</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="user-info">
+            <span>Hello, Guest</span>
+            <a href="#signin" class="signin-btn">Sign In / Join</a>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div lass="product-image">
+                <img src="../assets/fire_extinguisher.png" alt="ABC Fire Extinguisher">
+
+            </div>
+            <div class="product-details">
+                <h2>ABC Powder Type Fire Extinguisher - 1Kg</h2>
+                <p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
+                <p class="price">
+                    <span class="old-price">₹6,200.00</span> 
+                    <span class="new-price">₹1,450.00</span>
+                </p>
+                <p>You Save: ₹4,750.00</p>
+                <p>(Inclusive of all taxes)</p>
+                
+                <!-- Add to Cart / Buy Now buttons (Initially Hidden) -->
+                <div id="cart_buttons" style="display: none;">
+                    <form action="cart.php" method="POST">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        <button type="submit" name="add_to_cart" class="btn">Add to Cart</button>
+                        <button type="submit" name="buy_now" class="btn">Buy Now</button>
+                    </form>
+                </div>
+
+                <div class="product-info">
+                    <ul>
+                        <li>ISI Marked 1-year warranty</li>
+                        <li>Safe for live electrical equipment</li>
+                        <li>Fully refillable</li>
+                        <li>Controlled discharge</li>
+                        <li>Includes wall bracket</li>
+                    </ul>
+                </div>
+            </div>
+                <!--<p class="price">₹1,450.00</p>-->
+
+                <!-- OTP Verification -->
+                <form id="otpForm">
+                    <label for="Mobile">Enter Mobile Number:</label>
+                    <input type="tel" id="Mobile" name="Mobile" placeholder="+91xxxxxxxxxx" required>
+                    <button type="button" id="sendOtpBtn" class="btn">Send OTP</button>
+
+                    <label for="otp" style="display: none;" id="otpLabel">Enter OTP:</label>
+                    <input type="text" id="otp" name="otp" placeholder="Enter OTP" style="display: none;">
+                    <button type="button" id="verifyOtpBtn" class="btn" style="display: none;">Verify OTP</button>
+                </form>
+
+                <!-- Add to Cart -->
+                <button id="addToCartBtn" class="btn" style="display: none;">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 VariEX Fire Immuniser. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

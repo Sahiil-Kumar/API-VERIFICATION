@@ -1,0 +1,260 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #b71c1c;
+    color: white;
+    padding: 10px 0;
+}
+.product-container {
+    padding: 20px;
+}
+.btn {
+    background-color: #b71c1c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+} */
+/* General Reset */
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #f70909;
+    color: #fff;
+    padding: 5px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+nav .logo p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav .nav-links li {
+    display: list-item;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a:focus {
+    background-color: #ff9f00;
+    color: #fff;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+nav .nav-links a.active {
+    background-color: #ff9f00;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .user-info span {
+    font-size: 16px;
+}
+
+nav .signin-btn {
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+nav .signin-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Main Section */
+main {
+    padding: 40px 20px;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Product Image */
+.product-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Details */
+.product-details {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #555;
+    text-align: center;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 18px;
+    color: #ff9f00;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #e63946;
+}
+
+.product-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.product-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.product-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* OTP Verification */
+#otpForm {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#otpForm input[type="tel"],
+#otpForm input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#otpForm button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#otpForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Add to Cart Button */
+#addToCartBtn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#addToCartBtn:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
